@@ -10,6 +10,7 @@ const MODRINTH_API_URL = 'https://api.modrinth.com/v2';
 
 const allowedOrigins = [
   'https://rumodrinth.onrender.com',
+  'https://rumodrinth.pages.dev',
   'http://localhost:5173'
 ];
 
@@ -45,4 +46,5 @@ app.use('/', createProxyMiddleware({
 
 app.listen(PORT, () => {
   console.log(`Proxy server is running on port ${PORT}`);
+
 });
